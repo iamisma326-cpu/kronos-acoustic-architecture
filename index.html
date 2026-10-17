@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRONOS — Arquitectura Acústica & Diseño Espacial</title>
+  <meta name="description" content="Estudio de arquitectura acústica de vanguardia. Esculpimos el silencio y la resonancia en espacios monumentales.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de progreso de lectura -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar"></div>
+  </div>
+
+  <!-- Cursor personalizado -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="KRONOS Inicio">
+        <span class="logo__mark"></span>
+        KRONOS
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#filosofia" class="nav-link" data-magnetic>Filosofía</a>
+        <a href="#obras" class="nav-link" data-magnetic>Obras</a>
+        <a href="#proceso" class="nav-link" data-magnetic>Proceso</a>
+        <a href="#metricas" class="nav-link" data-magnetic>Métricas</a>
+      </nav>
+      <a href="#contacto" class="btn btn--outline" data-magnetic>
+        <span>Iniciar Proyecto</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85" alt="Interior arquitectónico minimalista de hormigón" class="hero__img" data-speed="0.7">
+        <div class="hero__overlay"></div>
+      </div>
+      
+      <div class="container hero__content">
+        <div class="hero__meta">
+          <span class="eyebrow">ESTUDIO DE ARQUITECTURA ACÚSTICA</span>
+          <span class="eyebrow">ZÚRICH — TOKIO — MADRID</span>
+        </div>
+        
+        <h1 class="hero__title" data-split="chars">
+          ESCULPIMOS<br>
+          <em>EL SILENCIO</em>
+        </h1>
+        
+        <div class="hero__bottom">
+          <p class="hero__desc" data-split="lines">
+            Diseñamos santuarios sonoros, auditorios y espacios residenciales donde la física del sonido se funde con la brutalidad de la materia pura.
+          </p>
+          <a href="#filosofia" class="scroll-indicator" aria-label="Desplazarse hacia abajo" data-magnetic>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 4v16m0 0l-6-6m6 6l6-6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO / FILOSOFÍA -->
+    <section id="filosofia" class="section manifesto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">01 / FILOSOFÍA</span>
+          <span class="section-subtitle">ACÚSTICA ARQUITECTÓNICA</span>
+        </div>
+
+        <div class="manifesto__text-wrap">
+          <p class="manifesto__text" data-split="words">
+            El sonido no es un elemento secundario; es la dimensión invisible que define cómo habitamos el espacio. Transformamos la reverberación en emoción a través de geometrías calculadas al milímetro y materiales nobles que respiran.
+          </p>
+        </div>
+
+        <div class="manifesto__grid">
+          <div class="parallax-card">
+            <div class="parallax-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Detalle de luz y sombra en estructura arquitectónica" class="parallax-img">
+            </div>
+            <div class="parallax-card__caption">
+              <span>FIG. 01 — DIFUSIÓN ORGÁNICA</span>
+              <span>HORMIGÓN ACÚSTICO POROSO</span>
+            </div>
+          </div>
+
+          <div class="manifesto__aside">
+            <h2 class="h3">La materia como instrumento</h2>
+            <p>Cada superficie refleja, absorbe o difracta la energía acústica. Trabajamos con maderas envejecidas, piedra volcánica y aleaciones de bronce para sintonizar cada habitación como si fuera el cuerpo de un violonchelo.</p>
+            <a href="#proceso" class="link-arrow">
+              <span>Explorar nuestra metodología</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN HORIZONTAL FIJADA (OBRAS) -->
+    <section id="obras" class="works-section">
+      <div class="works-pin-wrap">
+        <div class="works-header container">
+          <div>
+            <span class="section-index">02 / ARCHIVO SELECCIONADO</span>
+            <h2 class="works-title">OBRAS MONUMENTALES</h2>
+          </div>
+          <div class="works-counter">
+            <span>DESLIZA PARA EXPLORAR</span>
+            <div class="works-progress-track">
+              <div class="works-progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works-track">
+          <!-- Obra 1 -->
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=1400&q=80" alt="Pabellón Aether en Kioto">
+              <span class="work-card__year">2024</span>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__tags">
+                <span>KIOTO, JAPÓN</span>
+                <span>•</span>
+                <span>RT60: 1.85s</span>
+              </div>
+              <h3 class="work-card__title">Pabellón Aether</h3>
+              <p class="work-card__desc">Sala de cámara subterránea tallada en roca basáltica con deflectores suspendidos de cedro japonés.</p>
+            </div>
+          </article>
+
+          <!-- Obra 2 -->
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1400&q=80" alt="Auditorio Nord en Oslo">
+              <span class="work-card__year">2023</span>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__tags">
+                <span>OSLO, NORUEGA</span>
+                <span>•</span>
+                <span>RT60: 2.10s</span>
+              </div>
+              <h3 class="work-card__title">Auditorio Filarmónico Nord</h3>
+              <p class="work-card__desc">Geometría paramétrica envolvente que garantiza una claridad acústica idéntica en sus 1,400 asientos.</p>
+            </div>
+          </article>
+
+          <!-- Obra 3 -->
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80" alt="Santuario Silente en Atacama">
+              <span class="work-card__year">2023</span>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__tags">
+                <span>ATACAMA, CHILE</span>
+                <span>•</span>
+                <span>08 dBA PISO DE RUIDO</span>
+              </div>
+              <h3 class="work-card__title">Monolito del Desierto</h3>
+              <p class="work-card__desc">Residencia privada y estudio de masterización aislado sísmicamente en medio del desierto más árido del mundo.</p>
+            </div>
+          </article>
+
+          <!-- Obra 4 -->
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80" alt="Fundación Resonancia en Zúrich">
+              <span class="work-card__year">2022</span>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__tags">
+                <span>ZÚRICH, SUIZA</span>
+                <span>•</span>
+                <span>GALERÍA SONORA</span>
+              </div>
+              <h3 class="work-card__title">Fundación Resonancia</h3>
+              <p class="work-card__desc">Espacio expositivo para arte sonoro con muros acústicos móviles motorizados de bronce y fieltro prensado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO (PINNED SPLIT SECTION) -->
+    <section id="proceso" class="section process">
+      <div class="container process__grid">
+        <div class="process__sticky">
+          <span class="section-index">03 / METODOLOGÍA</span>
+          <h2 class="process__heading">INGENIERÍA DEL VACÍO</h2>
+          <p class="process__lead">Nuestro enfoque combina simulaciones algorítmicas de trazado de rayos con artesanía arquitectónica tradicional.</p>
+          
+          <div class="acoustic-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="process__steps">
+          <article class="step-card">
+            <span class="step-card__num">I</span>
+            <h3 class="step-card__title">Cartografía Espectral</h3>
+            <p class="step-card__text">Analizamos las frecuencias naturales del terreno, las vibraciones estructurales del entorno y la incidencia del viento antes de trazar la primera línea.</p>
+            <div class="step-card__spec">RANGO DE ANÁLISIS: 12 Hz — 24 kHz</div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">II</span>
+            <h3 class="step-card__title">Modelado Algorítmico</h3>
+            <p class="step-card__text">Esculpimos digitalmente el volumen interior mediante millones de partículas sonoras virtuales, eliminando ecos flotantes y ondas estacionarias.</p>
+            <div class="step-card__spec">PRECISIÓN: SIMULACIÓN BINAURAL 3D</div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">III</span>
+            <h3 class="step-card__title">Alquimia Material</h3>
+            <p class="step-card__text">Desarrollamos compuestos propios en nuestro laboratorio: hormigones alveolares, maderas termo-tratadas y tejidos metálicos microperforados.</p>
+            <div class="step-card__spec">COEFICIENTE DE ABSORCIÓN: αw 0.95</div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">IV</span>
+            <h3 class="step-card__title">Afinación In Situ</h3>
+            <p class="step-card__text">Una vez construida la obra, ajustamos manualmente los resonadores de Helmholtz ocultos hasta alcanzar la firma acústica exacta deseada.</p>
+            <div class="step-card__spec">CERTIFICACIÓN: ISO 3382-1</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTRICAS / CONTADORES ANIMADOS -->
+    <section id="metricas" class="section metrics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">04 / IMPACTO EN CIFRAS</span>
+          <span class="section-subtitle">PRECISIÓN MEDIBLE</span>
+        </div>
+
+        <div class="metrics__grid">
+          <div class="metric-item">
+            <div class="metric-item__value">
+              <span class="counter" data-target="42" data-decimals="0">0</span>
+            </div>
+            <h3 class="metric-item__label">Santuarios Acústicos</h3>
+            <p class="metric-item__desc">Obras permanentes construidas en 14 países durante la última década.</p>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-item__value">
+              <span class="counter" data-target="11.4" data-decimals="1">0.0</span>
+              <span class="metric-item__unit">dBA</span>
+            </div>
+            <h3 class="metric-item__label">Ruido de Fondo Medio</h3>
+            <p class="metric-item__desc">Por debajo del umbral del oído humano común, rozando el silencio absoluto.</p>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-item__value">
+              <span class="counter" data-target="99.6" data-decimals="1">0.0</span>
+              <span class="metric-item__unit">%</span>
+            </div>
+            <h3 class="metric-item__label">Aislamiento Estructural</h3>
+            <p class="metric-item__desc">Desacoplamiento sísmico y acústico mediante sistemas de muelles elastoméricos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGEN PARALLAX DE ANCHO COMPLETO -->
+    <section class="full-bleed-banner" aria-label="Galería visual">
+      <div class="full-bleed-banner__wrap">
+        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=2000&q=85" alt="Interior de hormigón bañado por luz natural" class="full-bleed-banner__img">
+        <div class="full-bleed-banner__quote container">
+          <blockquote>
+            «La arquitectura es música congelada; nosotros descongelamos el espacio para que vuelva a sonar.»
+          </blockquote>
+          <cite>— S. VANDERBERG, ARQUITECTO DIRECTOR</cite>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACTO -->
+  <footer id="contacto" class="site-footer">
+    <div class="container">
+      <div class="footer-cta">
+        <span class="eyebrow">¿LISTO PARA ESCULPIR EL ESPACIO?</span>
+        <h2 class="footer-cta__title" data-split="chars">HABLEMOS EN<br><em>SILENCIO</em></h2>
+        <a href="mailto:atelier@kronos-acoustics.ch" class="btn btn--primary btn--large" data-magnetic>
+          <span>atelier@kronos-acoustics.ch</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>ZÚRICH (SEDE)</h4>
+          <p>Bahnhofstrasse 104<br>8001 Zürich, Suiza<br>+41 44 580 12 90</p>
+        </div>
+        <div class="footer-col">
+          <h4>TOKIO</h4>
+          <p>Minami-Aoyama 5-chome<br>Minato-ku, Tokio 107-0062<br>+81 3 5550 8910</p>
+        </div>
+        <div class="footer-col">
+          <h4>MADRID</h4>
+          <p>Calle de Almagro 36<br>28010 Madrid, España<br>+34 91 050 44 12</p>
+        </div>
+        <div class="footer-col">
+          <h4>CONECTAR</h4>
+          <ul class="footer-links">
+            <li><a href="#obras">Archivo de Obras</a></li>
+            <li><a href="#filosofia">Publicaciones Acústicas</a></li>
+            <li><a href="#proceso">Laboratorio I+D</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 KRONOS ARCHITECTURAL ACOUSTICS. TODOS LOS DERECHOS RESERVADOS.</span>
+        <a href="#" class="back-to-top" data-magnetic>VOLVER ARRIBA ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Librerías por CDN (versiones fijas y gratuitas) -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
